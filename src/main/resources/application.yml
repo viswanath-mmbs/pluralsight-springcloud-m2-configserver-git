@@ -1,0 +1,15 @@
+---
+server:  port: 8888
+spring:  cloud:    config:      server:        git:          uri: https://github.com/viswanath-mmbs/spring-cloudconfig-mvn-tolls
+          search-paths:            - 'station*'
+  security:
+    user:      name: mvn
+      password: mvn
+      
+
+
+#  security:
+#    basic:
+#     enabled: true#    user:#      name: mvn
+#      password: mvn
+#  autoconfigure:#    exclude:#    - org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration
